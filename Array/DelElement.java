@@ -26,7 +26,7 @@ public class DelElement {
         int i, j;
         for (i = j = 0; i < size; i++) {
             if (array[i] != x) {
-                array[j] = array[i];  //mang moi
+                array[j] = array[i];  //mang moi ?
                 j++;
             }
         }
