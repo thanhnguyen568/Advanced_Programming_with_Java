@@ -38,4 +38,5 @@ public class AddElement {
         }
         System.out.println(newArray[i]);
     }
+    
 }
