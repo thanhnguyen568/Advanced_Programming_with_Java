@@ -34,7 +34,6 @@ public class MergeArray {
         for (int i = sizeA; i < sizeMer; i++) {
             arrayMerged[i ] = arrayB[i- sizeA]; //i-size để i chạy từ 0
         }
-
         System.out.print("Mảng arrayMerged là: ");
         System.out.println(Arrays.toString(arrayMerged));
 
