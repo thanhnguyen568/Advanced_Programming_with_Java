@@ -15,7 +15,7 @@ public class AddElement {
 
         int[] array = new int[size];
 
-        for (int i = 0; i < size; i++) {
+        for (int i = 0; i < size - 1; i++) {
             System.out.print("Nhập phần thứ vị trí " + i + ": ");
             array[i] = scanner.nextInt();
         }
@@ -26,17 +26,18 @@ public class AddElement {
         System.out.print("Nhập vị trí cần chèn j = ");
         int j = scanner.nextInt();  //1
 
-        int[] newArray = new int[size + 1];
-        int i;
-        for ( i = 0; i <= j; i++) {
-            newArray[i] = array[i];
-            newArray[j] = x;
+        //1 2 3 4 0
+        //2 => 10
+        //1 2 10 3 4
+
+        for (int i = size - 1; i > j; i--) {
+            array[i] = array[i - 1];
         }
-        for ( i = j + 1; i < size + 1; i++) {
-            newArray[i] = array[j];
-            j++;
+        array[j] = x;
+
+        for (int i = 0; i < size; i++) {
+            System.out.print(" " + array[i]);
         }
-        System.out.println(newArray[i]);
     }
 
 }
