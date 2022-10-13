@@ -22,7 +22,6 @@ public class CountChar {
         System.out.println("Số lần xuất hiện ký tự trong chuỗi = " + count);
     }
 
-
     // METHOD NEW ARRAY AND RETURN ARRAY
     public static String[] createArray() {
         Scanner scanner = new Scanner(System.in);
