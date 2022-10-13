@@ -16,7 +16,7 @@ public class DelElement {
         int[] array = new int[size];
 
         for (int i = 0; i < size; i++) {
-            System.out.print("Nhập phần thứ vị trí " + i + ": ");
+            System.out.print("Nhập phần tử vị trí " + i + ": ");
             array[i] = scanner.nextInt();
         }
 

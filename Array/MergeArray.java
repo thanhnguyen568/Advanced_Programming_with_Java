@@ -46,7 +46,7 @@ public class MergeArray {
         int[] array = new int[size];
 
         for (int i = 0; i < size; i++) {
-            System.out.print("Nhập phần vị trí " + i + ": ");
+            System.out.print("Nhập phần tử vị trí " + i + ": ");
             array[i] = scanner.nextInt();
         }
 

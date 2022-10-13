@@ -2,25 +2,27 @@ package Method;
 
 import java.util.Scanner;
 
-public class FindMax2D {
+public class SumColumn {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-        int[][] array = createArray();
-        int max = array[0][0];
+        System.out.print("Index cột cần tính tổng = ");
+        int colSum = scanner.nextInt();
+        double[][] array = createArray();
+        double sum = 0;
 
-        for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array[i].length; j++) {
-                if (max < array[i][j]) {
-                    max = array[i][j];
-                }
+        for (int row = 0; row < array.length; row++) {
+            for (int col = 0; col < array[row].length; col++) {
+                sum += array[row][colSum];
             }
+            System.out.println("Tổng của cột vị trí index" + colSum + ": " + sum);
+            break;
         }
 
-        System.out.println("Phần tử lớn nhất trong ma trận = " + max);
     }
 
     // METHOD NEW ARRAY AND RETURN ARRAY 2D
-    public static int[][] createArray() {
+    public static double[][] createArray() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Nhập số dòng i của mảng = ");
@@ -28,7 +30,7 @@ public class FindMax2D {
         System.out.print("Nhập số cột j của mảng = ");
         int col = scanner.nextInt();
 
-        int[][] array = new int[row][col];
+        double[][] array = new double[row][col];
 
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
@@ -39,5 +41,4 @@ public class FindMax2D {
 
         return array;
     }
-
 }
