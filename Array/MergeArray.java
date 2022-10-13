@@ -10,11 +10,11 @@ public class MergeArray {
 
         System.out.print("Nhập độ dài mảng arrayA = ");
         int sizeA = scanner.nextInt();
-        int[] arrayA = CreateArray(sizeA);
+        int[] arrayA = createArray(sizeA);
 
         System.out.print("Nhập độ dài mảng arrayB = ");
         int sizeB = scanner.nextInt();
-        int[] arrayB = CreateArray(sizeB);
+        int[] arrayB = createArray(sizeB);
 
         System.out.print("Mảng arrayA là: ");
         System.out.println(Arrays.toString(arrayA));
@@ -34,16 +34,17 @@ public class MergeArray {
         for (int i = sizeA; i < sizeMer; i++) {
             arrayMerged[i ] = arrayB[i- sizeA]; //i-size để i chạy từ 0
         }
+
         System.out.print("Mảng arrayMerged là: ");
         System.out.println(Arrays.toString(arrayMerged));
-
     }
 
     // METHOD NEW ARRAY AND RETURN ARRAY
-    public static int[] CreateArray(int size) {
+    public static int[] createArray(int size) {
         Scanner scanner = new Scanner(System.in);
 
         int[] array = new int[size];
+
         for (int i = 0; i < size; i++) {
             System.out.print("Nhập phần vị trí " + i + ": ");
             array[i] = scanner.nextInt();
