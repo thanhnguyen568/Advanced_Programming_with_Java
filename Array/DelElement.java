@@ -21,20 +21,20 @@ public class DelElement {
         }
 
         System.out.print("Nhập số nguyên cần xóa x = ");
-        int x = scanner.nextInt();
+        int numberX = scanner.nextInt();
 
-        int i, j;
-        for (i = j = 0; i < size; i++) {
-            if (array[i] != x) {
-                array[j] = array[i];  //mang cung 1 mang chay index j
-                j++;
+        int indexI, indexJ;
+        for (indexI = indexJ = 0; indexI < size; indexI++) {
+            if (array[indexI] != numberX) {
+                array[indexJ] = array[indexI];  //mang cung 1 mang chay index j
+                indexJ++;
             }
         }
-        size = j;
+        size = indexJ;
 
-        System.out.println("Mảng còn lại sau khi xóa phần tử " + x + " là: ");
-        for (i = 0; i < size; i++) {
-            System.out.print(array[i] + "\t");
+        System.out.println("Mảng còn lại sau khi xóa phần tử " + numberX + " là: ");
+        for (indexI = 0; indexI < size; indexI++) {
+            System.out.print(array[indexI] + "\t");
         }
     }
 

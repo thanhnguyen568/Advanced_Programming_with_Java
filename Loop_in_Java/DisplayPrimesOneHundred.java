@@ -2,7 +2,7 @@ package Loop_in_Java;
 
 import java.util.Scanner;
 
-public class DisplayPrimes100 {
+public class DisplayPrimesOneHundred {
     public static boolean isPrimeNumber(int n) {
 
         if (n < 2) {

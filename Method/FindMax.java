@@ -2,7 +2,7 @@ package Method;
 
 import java.util.Scanner;
 
-public class FindMax2D {
+public class FindMax {
     public static void main(String[] args) {
 
         int[][] array = createArray();
