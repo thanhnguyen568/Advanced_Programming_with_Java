@@ -11,8 +11,8 @@ public class DisplayShape {
             }
             System.out.println(" ");
         }
-        System.out.println();
 
+        System.out.println();
     }
 
     public static void PrintTriangleBotLeft(int height, int width) {
@@ -22,8 +22,8 @@ public class DisplayShape {
             }
             System.out.println(" ");
         }
-        System.out.println();
 
+        System.out.println();
     }
 
     public static void PrintTriangleTopLeft(int height, int width) {
@@ -33,8 +33,8 @@ public class DisplayShape {
             }
             System.out.println(" ");
         }
-        System.out.println();
 
+        System.out.println();
     }
 
     public static void main(String[] args) {

@@ -28,9 +28,9 @@ public class SumColumn {
         System.out.print("Nhập số dòng i của mảng = ");
         int row = scanner.nextInt();
         System.out.print("Nhập số cột j của mảng = ");
-        int col = scanner.nextInt();
+        int column = scanner.nextInt();
 
-        double[][] array = new double[row][col];
+        double[][] array = new double[row][column];
 
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
