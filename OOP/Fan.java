@@ -5,7 +5,7 @@ public class Fan {
     int medium = 2;
     int fast = 3;
     private int speed = slow;
-    private boolean on;
+    private boolean on = false;
     private double radius = 5;
     private String color = "blue";
 
@@ -46,7 +46,7 @@ public class Fan {
 
     @Override
     public String toString() {
-        if (this.on == true) {
+        if (this.on) {
             return "Fan is on {"
                     + "Speed: " + this.getSpeed()
                     + ", Color: " + this.getColor()
