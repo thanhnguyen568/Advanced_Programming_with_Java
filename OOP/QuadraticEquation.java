@@ -3,28 +3,37 @@ package OOP;
 import java.util.Scanner;
 
 public class QuadraticEquation {
-    private double numberA;
-    private double numberB;
-    private double numberC;
+    private final double NUMBERA;
+    private final double NUMBERB;
+    private final double NUMBERC;
     double delta, rootFirst, rootSecond;
 
     public QuadraticEquation(double numberA, double numberB, double numberC) {
-        this.numberA = numberA;
-        this.numberB = numberB;
-        this.numberC = numberC;
+        this.NUMBERA = numberA;
+        this.NUMBERB = numberB;
+        this.NUMBERC = numberC;
     }
 
     public double getDiscriminant() {
-        delta = Math.pow(numberB, 2) - 4 * numberA * numberC;
+        delta = Math.pow(NUMBERB, 2) - 4 * NUMBERA * NUMBERC;
         return delta;
     }
 
     public double getRootFirst() {
-        return rootFirst = (-numberB + Math.pow(delta, 0.5)) / 2 * numberA;
+        return rootFirst = (-NUMBERB + Math.pow(delta, 0.5)) / 2 * NUMBERA;
     }
 
     public double getRootSecond() {
-        return rootSecond = (-numberB - Math.pow(delta, 0.5)) / 2 * numberA;
+        return rootSecond = (-NUMBERB - Math.pow(delta, 0.5)) / 2 * NUMBERA;
+    }
+
+    @Override
+    public String toString() {
+        return "QuadraticEquation{" +
+                "delta=" + delta +
+                ", rootFirst=" + rootFirst +
+                ", rootSecond=" + rootSecond +
+                '}';
     }
 
     public static void main(String[] args) {
@@ -49,14 +58,5 @@ public class QuadraticEquation {
             System.out.println("The equation has two roots: " + quadraticEquation.getRootFirst() + " and " + quadraticEquation.getRootSecond());
         }
 
-    }
-
-    @Override
-    public String toString() {
-        return "QuadraticEquation{" +
-                "delta=" + delta +
-                ", rootFirst=" + rootFirst +
-                ", rootSecond=" + rootSecond +
-                '}';
     }
 }
