@@ -3,7 +3,9 @@ package OOP;
 import java.util.Scanner;
 
 public class QuadraticEquation {
-    private final double numberA, numberB, numberC;
+    private double numberA;
+    private double numberB;
+    private double numberC;
     double delta, rootFirst, rootSecond;
 
     public QuadraticEquation(double numberA, double numberB, double numberC) {
@@ -49,4 +51,12 @@ public class QuadraticEquation {
 
     }
 
+    @Override
+    public String toString() {
+        return "QuadraticEquation{" +
+                "delta=" + delta +
+                ", rootFirst=" + rootFirst +
+                ", rootSecond=" + rootSecond +
+                '}';
+    }
 }
