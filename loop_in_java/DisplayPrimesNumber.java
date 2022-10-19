@@ -1,8 +1,9 @@
-package Loop_in_Java;
+package loop_in_java;
 
 import java.util.Scanner;
 
-public class DisplayPrimesOneHundred {
+public class DisplayPrimesNumber {
+
     public static boolean isPrimeNumber(int numbers) {
 
         if (numbers < 2) {
@@ -25,14 +26,19 @@ public class DisplayPrimesOneHundred {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Hiển thị số nguyên tố nhỏ hơn n = ");
+        System.out.print("Nhập n số nguyên tố đâu tiên = ");
         int numbers = scanner.nextInt();
 
-        System.out.println("Hiển thị số nguyên tố nhỏ hơn: " + numbers);
-        for (int i = 2; i < numbers; i++) {
-            if (isPrimeNumber(i)) {
-                System.out.print(i + " ");
+        System.out.println(numbers + " số nguyên tố đầu tiên là:");
+
+        int count = 0;
+        int index = 2;
+        while (count < numbers) {
+            if (isPrimeNumber(index)) {
+                System.out.print(index + " ");
+                count++;
             }
+            index++;
         }
     }
 
