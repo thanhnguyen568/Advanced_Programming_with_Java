@@ -46,7 +46,7 @@ public class Fan {
 
     @Override
     public String toString() {
-        if (this.on) {
+        if (isOn()) {
             return "Fan is on {"
                     + "Speed: " + this.getSpeed()
                     + ", Color: " + this.getColor()
@@ -68,12 +68,12 @@ public class Fan {
         fanFirst.setColor("yellow");
         fanFirst.setOn(true);
         System.out.println("Information fanFirst: ");
-        System.out.println(fanFirst.toString());
+        System.out.println(fanFirst);
 
         Fan fanSecond = new Fan();
         fanSecond.setSpeed(fanSecond.medium);
         System.out.println("Information fanSecond: ");
-        System.out.println(fanSecond.toString());
+        System.out.println(fanSecond);
     }
 
 }
