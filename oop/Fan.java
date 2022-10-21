@@ -1,9 +1,9 @@
 package oop;
 
 public class Fan {
-    int slow = 1;
-    int medium = 2;
-    int fast = 3;
+    private int slow = 1;
+    private int medium = 2;
+    private int fast = 3;
     private int speed = slow;
     private boolean on = false;
     private double radius = 5;

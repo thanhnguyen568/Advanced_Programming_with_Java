@@ -6,7 +6,7 @@ public class QuadraticEquation {
     private final double NUMBERA;
     private final double NUMBERB;
     private final double NUMBERC;
-    double delta, rootFirst, rootSecond;
+    private double delta, rootFirst, rootSecond;
 
     public QuadraticEquation(double numberA, double numberB, double numberC) {
         this.NUMBERA = numberA;
