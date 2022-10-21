@@ -22,7 +22,7 @@ public class TestCircle {
         System.out.println(circleB.getArea());
         System.out.println();
         /**
-         *      Truy xuất phương thức getColor() bị lỗi do đã cài phạm vi truy cập là private
+         *      Truy xuất phương thức getColor() bị lỗi do đã cài phạm vi truy cập là private trong cùng class.
          *      Đổi lại các pham vi truy cập khác như: public, protected, default sẽ truy cập được.
          *
          *         System.out.print("color of circleB: ");
