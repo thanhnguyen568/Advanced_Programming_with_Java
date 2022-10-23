@@ -1,6 +1,6 @@
 package ss6_inheritance;
 
-public class PointThreeDimensional extends PointTowDimensional{
+public class PointThreeDimensional extends PointTwoDimensional {
     private float z;
 
     public PointThreeDimensional() {
@@ -19,5 +19,13 @@ public class PointThreeDimensional extends PointTowDimensional{
         this.z = z;
     }
 
+    @Override
+    public String toString() {
+        return "PointThreeDimensional(" +
+                "x=" + super.getX() +
+                ",y=" + super.getY() +
+                ",z=" + this.z +
+                ')';
+    }
 
 }

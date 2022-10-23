@@ -1,13 +1,13 @@
 package ss6_inheritance;
 
-public class PointTowDimensional {
+public class PointTwoDimensional {
     private float x;
     private float y;
 
-    public PointTowDimensional() {
+    public PointTwoDimensional() {
     }
 
-    public PointTowDimensional(float x, float y) {
+    public PointTwoDimensional(float x, float y) {
         this.x = x;
         this.y = y;
     }
@@ -30,10 +30,10 @@ public class PointTowDimensional {
 
     @Override
     public String toString() {
-        return "PointTowDimensional("
-                + x
-                + "," + y
-                + ')';
+        return "PointTwoDimensional(" +
+                "x=" + this.x +
+                ",y=" + this.y +
+                ')';
     }
 
 //    public static void main(String[] args) {
