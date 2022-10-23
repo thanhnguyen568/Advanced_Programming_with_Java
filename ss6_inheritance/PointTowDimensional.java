@@ -1,47 +1,43 @@
-//package ss6_inheritance;
-//
-//public class PointTowDimensional {
-//    private float pointX;
-//    private float pointY;
-//
-//    public PointTowDimensional() {
+package ss6_inheritance;
+
+public class PointTowDimensional {
+    private float x;
+    private float y;
+
+    public PointTowDimensional() {
+    }
+
+    public PointTowDimensional(float x, float y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public float getX() {
+        return x;
+    }
+
+    public void setX(float x) {
+        this.x = x;
+    }
+
+    public float getY() {
+        return y;
+    }
+
+    public void setY(float y) {
+        this.y = y;
+    }
+
+    @Override
+    public String toString() {
+        return "PointTowDimensional("
+                + x
+                + "," + y
+                + ')';
+    }
+
+//    public static void main(String[] args) {
+//        PointTowDimensional pointTowDimensional = new PointTowDimensional(4,5);
+//        System.out.println(pointTowDimensional);
 //    }
-//
-//    public PointTowDimensional(float pointX, float pointY) {
-//        this.pointX = pointX;
-//        this.pointY = pointY;
-//    }
-//
-//    public float getPointX() {
-//        return pointX;
-//    }
-//
-//    public void setPointX(float pointX) {
-//        this.pointX = pointX;
-//    }
-//
-//    public float getPointY() {
-//        return pointY;
-//    }
-//
-//    public void setPointY(float pointY) {
-//        this.pointY = pointY;
-//    }
-//
-//    public void setXY(float pointX, float pointY) {
-//        this.pointX = pointX;
-//        this.pointY = pointY;
-//    }
-//    public  float[] getXY(int size) {
-//        int[] array = new int[size];
-//    }
-//
-//
-//    @Override
-//    public String toString() {
-//        return "PointTowDimensional("
-//                + pointX
-//                + "," + pointY
-//                + ')';
-//    }
-//}
+}
