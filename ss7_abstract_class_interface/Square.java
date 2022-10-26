@@ -1,6 +1,6 @@
 package ss7_abstract_class_interface;
 
-public class Square extends Shape implements Resizeable {
+public class Square extends Shape implements Resizeable,Colorable {
     private double side = 1;
 
     public Square() {
@@ -41,4 +41,8 @@ public class Square extends Shape implements Resizeable {
         System.out.println("Area after resizing: " + newSide * newSide);
     }
 
+    @Override
+    public void howToColor() {
+        System.out.println("Color all four sides");
+    }
 }
