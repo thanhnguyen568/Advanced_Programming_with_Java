@@ -7,6 +7,7 @@ public class TestCylinder {
         Scanner scanner = new Scanner(System.in);
 
         Cylinder cylinder = new Cylinder();
+
         System.out.print("Input radius of Circle = ");
         cylinder.setRadius(scanner.nextDouble());
 
