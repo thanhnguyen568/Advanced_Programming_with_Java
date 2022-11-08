@@ -1,4 +1,4 @@
-package array;
+package ss2_loop_array_in_java;
 
 import java.util.Arrays;
 
