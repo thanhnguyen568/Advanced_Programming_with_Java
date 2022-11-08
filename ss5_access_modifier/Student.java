@@ -1,4 +1,4 @@
-package access_modifier;
+package ss5_access_modifier;
 
 public class Student {
     private String name = "John";
