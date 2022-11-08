@@ -1,4 +1,4 @@
-package method;
+package ss3_method;
 
 import java.util.Scanner;
 

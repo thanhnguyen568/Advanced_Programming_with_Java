@@ -1,22 +1,23 @@
-package method;
+package ss3_method;
 
 import java.util.Scanner;
 
-public class FindMax {
+public class MainDiagonal {
     public static void main(String[] args) {
 
         int[][] array = createArray();
-        int max = array[0][0];
+        int sum = 0;
 
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
-                if (max < array[i][j]) {
-                    max = array[i][j];
+                if (i == j) {
+                    sum += array[i][j];
                 }
             }
+
         }
 
-        System.out.println("Phần tử lớn nhất trong ma trận = " + max);
+        System.out.println("Tổng đường chéo chính là: " + sum);
     }
 
     // METHOD NEW ARRAY AND RETURN ARRAY 2D
