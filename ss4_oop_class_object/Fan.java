@@ -1,4 +1,4 @@
-package oop;
+package ss4_oop_class_object;
 
 public class Fan {
     private int slow = 1;
