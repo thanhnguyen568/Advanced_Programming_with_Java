@@ -60,7 +60,6 @@ public class Reverse {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         ArrayList<Integer> integerArrayList = new ArrayList<>(10);
-
         for (int i = 0; i < 10; i++) {
             integerArrayList.add(i);
         }
