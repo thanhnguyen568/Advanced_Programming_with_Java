@@ -93,5 +93,6 @@ public class ProductManage {
 
         System.out.println("Test display id 0");
         displayProduct(0);
+        displayProduct(1);
     }
 }
