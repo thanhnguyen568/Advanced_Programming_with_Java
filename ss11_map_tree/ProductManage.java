@@ -75,9 +75,9 @@ public class ProductManage {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Test display");
-        displayList();
-        System.out.println("-----");
+//        System.out.println("Test display");
+//        displayList();
+//        System.out.println("-----");
 
         System.out.println("Test add");
         addProduct();
