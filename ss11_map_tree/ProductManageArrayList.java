@@ -3,7 +3,7 @@ package ss11_map_tree;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ProductManage {
+public class ProductManageArrayList {
     static Scanner scanner = new Scanner(System.in);
     static ArrayList<Product> productList = new ArrayList();
 
@@ -75,24 +75,22 @@ public class ProductManage {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Test display");
+        System.out.println("-----Test display");
         displayList();
-        System.out.println("-----");
 
-        System.out.println("Test add");
+        System.out.println("-----Test add");
         addProduct();
-        System.out.println("-----");
 
-        System.out.println("Test edit id 1");
+        System.out.print("-----Test edit id: ");
         int edit = Integer.parseInt(scanner.nextLine());
         editItem(edit);
-        System.out.println("-----");
 
-        System.out.println("Test remove id 2");
-        removeItem(2);
+        System.out.print("-----Test remove id: ");
+        int remove = Integer.parseInt(scanner.nextLine());
+        removeItem(remove);
 
-        System.out.println("Test display id 0");
-        displayProduct(0);
-        displayProduct(1);
+        System.out.print("-----Test display id: ");
+        int displayOne = Integer.parseInt(scanner.nextLine());
+        displayProduct(displayOne);
     }
 }
