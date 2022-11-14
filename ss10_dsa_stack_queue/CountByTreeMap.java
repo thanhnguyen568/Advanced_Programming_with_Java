@@ -5,40 +5,37 @@ import java.util.*;
 public class CountByTreeMap {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Map<String, Integer> countStr = new TreeMap<>();
-        Queue<String> queue = new LinkedList<>();
-        /**
-         * Input String
-         */
+
         System.out.print("Input String: ");
         String inputStr = scanner.nextLine();
         String[] str = inputStr.split("");
+
         /**
-         * Remove spaces, UpperCaser, add LinkedList
+         * UpperCaser
          */
         for (int i = 0; i < str.length; i++) {
             if (!str[i].equals(" ")) {
                 str[i] = str[i].toUpperCase();
-                queue.add(str[i]);
             }
         }
-        System.out.println(queue);
+        System.out.println(Arrays.toString(str));
         /**
-         *
+         *  Check key and update value
          */
-        int count = 1;
-        for (String key : queue) {
-            if (!queue.contains(key)) {
-                countStr.put(key, count);
+        Map<String, Integer> treeMap = new TreeMap<>();
+        for (int i = 0; i < str.length; i++) {
+            if (!treeMap.containsKey(str[i]) && str[i] != " " ) {
+                treeMap.put(str[i], 1);
             } else {
-                countStr.put(key,count++);
+                treeMap.put(str[i], treeMap.get(str[i])+1);
             }
         }
-
-        for (Map.Entry<String, Integer> item : countStr.entrySet()) {
+        /**
+         * Display treemap
+         */
+        System.out.println("Display treemap: ");
+        for (Map.Entry<String, Integer> item : treeMap.entrySet()) {
             System.out.printf("%s - %s\n", item.getKey(), item.getValue());
         }
-
     }
-
 }
