@@ -17,7 +17,7 @@ public class ProductManageArrayList {
 
     static Product inputInfo() {
         System.out.println("Information a Product:");
-        id++;
+        id = Integer.parseInt(scanner.nextLine());
         System.out.print("Input product name: ");
         String productName = scanner.nextLine();
         System.out.print("Input price: ");
