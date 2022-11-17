@@ -5,8 +5,9 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class MergeArray {
+    static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Nhập độ dài mảng arrayA = ");
         int sizeA = scanner.nextInt();
@@ -41,8 +42,6 @@ public class MergeArray {
 
     // METHOD NEW ARRAY AND RETURN ARRAY
     public static int[] createArray(int size) {
-        Scanner scanner = new Scanner(System.in);
-
         int[] array = new int[size];
 
         for (int i = 0; i < size; i++) {

@@ -14,7 +14,6 @@ public class ProductManageArrayList {
     }
 
     static int id = 2;
-
     static Product inputInfo() {
         System.out.println("Information a Product:");
         id = Integer.parseInt(scanner.nextLine());
