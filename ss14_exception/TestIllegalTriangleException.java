@@ -26,7 +26,7 @@ public class TestIllegalTriangleException {
         }
     }
 
-    public static boolean isTriangle(int side1, int side2, int side3) {
-        return side1 + side2 > side3 && side1 + side3 > side2 && side3 + side2 > side1;
+    public static boolean isTriangle(int firstSide, int secondSide, int thirdSide) {
+        return firstSide + secondSide > thirdSide && firstSide + thirdSide > secondSide && thirdSide + secondSide > firstSide;
     }
 }

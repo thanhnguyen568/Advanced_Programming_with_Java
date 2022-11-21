@@ -48,8 +48,8 @@ public class ProductManageLinkedList {
         if (!productList.contains(productList.get(id))) {
             System.out.println("Not found");
         } else {
-            productList.remove(id);
             System.out.println("Remove successful " + productList.get(id));
+            productList.remove(id);
         }
         displayList();
     }

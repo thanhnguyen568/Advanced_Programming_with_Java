@@ -2,6 +2,7 @@ package ss11_map_tree;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.TreeMap;
 
 public class ProductManageArrayList {
     static Scanner scanner = new Scanner(System.in);
@@ -14,8 +15,10 @@ public class ProductManageArrayList {
     }
 
     static int id = 2;
+
     static Product inputInfo() {
         System.out.println("Information a Product:");
+        System.out.print("Input ID: ");
         id = Integer.parseInt(scanner.nextLine());
         System.out.print("Input product name: ");
         String productName = scanner.nextLine();
@@ -47,8 +50,8 @@ public class ProductManageArrayList {
         if (!productList.contains(productList.get(id))) {
             System.out.println("Not found");
         } else {
-            productList.remove(id);
             System.out.println("Remove successful " + productList.get(id));
+            productList.remove(id);
         }
         displayList();
     }
