@@ -1,4 +1,4 @@
-package ss16_file;
+package ss16_io_text_file;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -57,9 +57,9 @@ public class ReadAndWriteFile {
 
     public static void main(String[] args) {
         ReadAndWriteFile readAndWriteFile = new ReadAndWriteFile();
-        List<Integer> numbers = readAndWriteFile.readFile("D:\\CodeGym\\Module2_Advanced_Programming_with_Java\\src\\file\\numbers.txt");
+        List<Integer> numbers = readAndWriteFile.readFile("D:\\CodeGym\\Module2_Advanced_Programming_with_Java\\src\\ss16_file\\data\\numbers.txt");
 
         int maxValue = findMax(numbers);
-        readAndWriteFile.writeFile("D:\\CodeGym\\Module2_Advanced_Programming_with_Java\\src\\file\\result.txt", maxValue);
+        readAndWriteFile.writeFile("D:\\CodeGym\\Module2_Advanced_Programming_with_Java\\src\\ss16_file\\data\\result.txt", maxValue);
     }
 }
