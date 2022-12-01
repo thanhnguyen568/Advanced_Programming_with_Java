@@ -1,4 +1,4 @@
-package ss16_io_text_file;
+package ss16_io_text_file.readCSV;
 
 public class National {
     private int id;

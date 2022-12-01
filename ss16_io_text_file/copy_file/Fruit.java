@@ -1,4 +1,4 @@
-package ss16_io_text_file;
+package ss16_io_text_file.copy_file;
 
 public class Fruit {
     private int no;

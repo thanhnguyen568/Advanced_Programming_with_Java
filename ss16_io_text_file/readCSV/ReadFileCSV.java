@@ -1,7 +1,8 @@
-package ss16_io_text_file;
+package ss16_io_text_file.readCSV;
+
+import ss16_io_text_file.readCSV.National;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
