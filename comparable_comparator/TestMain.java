@@ -16,7 +16,7 @@ public class TestMain {
         /**
          * Comparable
          */
-        Collections.sort(studentList);
+//        Collections.sort(studentList);
 
         /**
          * Comparator with class NameComparator
