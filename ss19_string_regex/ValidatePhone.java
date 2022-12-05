@@ -2,7 +2,7 @@ package ss19_string_regex;
 
 import java.util.Scanner;
 
-public class validate_phone {
+public class ValidatePhone {
     private static final String PHONE_REGEX = "^[(](84)[)][-][(][0][0-9]{9}[)]$";
 
     public static void main(String[] args) {

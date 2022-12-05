@@ -2,7 +2,7 @@ package ss19_string_regex;
 
 import java.util.Scanner;
 
-public class validate_classes {
+public class ValidateClasses {
     private static final String CLASS_REGEX = "^[C|P|A]+[0-9]{4}[G|H|I|K|L|M]$";
 
     public static void main(String[] args) {
